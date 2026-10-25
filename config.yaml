@@ -1,0 +1,18 @@
+batchsize: 256
+dropout_linears:
+- 0.4
+- 0.2
+feature_extractor: load_onehot_blosum62_esm2
+gamma: 0.7
+hidden_size: 150
+in_channels: 361
+lr: 0.0006
+max_epochs: 25
+monitor: valid_S
+name: ts
+num_linears:
+- 700
+- 220
+out_channels2: 90
+patience: 10
+seqlen: 29
